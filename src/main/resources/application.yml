@@ -3,3 +3,6 @@ spring:
     mongodb:
       database: ${DB_NAME}
       uri: ${DB_URL}
+  security:
+    user:
+      password: ${USER_PASSWORD}
