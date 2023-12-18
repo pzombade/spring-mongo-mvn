@@ -13,3 +13,6 @@ spring:
     exchange: user.exchange
     queue: user.queue
     routingkey: user.routingkey
+  security:
+    user:
+      password: ${USER_PASSWORD}
