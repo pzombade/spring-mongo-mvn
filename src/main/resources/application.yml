@@ -1,5 +1,15 @@
+app:
+  message: Message has been sent Successfully..
 spring:
   data:
     mongodb:
       database: ${DB_NAME}
       uri: ${DB_URL}
+  rabbitmq:
+    host: ${MQ_HOST}
+    password: ${MQ_USERNAME}
+    port: 5672
+    username: ${MQ_PASSWORD}
+    exchange: user.exchange
+    queue: user.queue
+    routingkey: user.routingkey
