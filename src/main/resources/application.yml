@@ -6,15 +6,12 @@ spring:
       database: ${DB_NAME}
       uri: ${DB_URL}
   rabbitmq:
-    host: ${MQ_HOST}
-    password: ${MQ_USERNAME}
-    port: 5672
-    username: ${MQ_PASSWORD}
+    addresses: ${MQ_ADDRESSES}
     exchange: user.exchange
     queue: user.queue
     routingkey: user.routingkey
     ssl:
-      enabled: true
+      enabled: false
   security:
     user:
       password: ${USER_PASSWORD}
