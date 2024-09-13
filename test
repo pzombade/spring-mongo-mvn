@@ -1,0 +1,1130 @@
+
+
+Prashant Zombade
+Contingent Worker
+
+Mastercard
+
+
+From: Prashant Zombade (IND_PUN) <
+Sent: Friday, September 13, 2024 10:51 AM
+To: Prashant Zombade [C] <>
+Subject: {EXTERNAL} FW: Qs
+
+From: Prashant Zombade (IND_PUN) Sent: Friday, September 13, 2024 10: 03 AM To: prashant. zombade@ gmail. com Subject: Qs From: Prashant Zombade Sent: Thursday, March 28, 2024 10: 59 AM To: Anand Kane <Anand. Kane@ opustechglobal. com> Subject: 
+ZjQcmQRYFpfptBannerStart
+CAUTION: The message originated from an EXTERNAL SOURCE 
+Please use caution when opening attachments, clicking links or responding to this email 
+
+
+ZjQcmQRYFpfptBannerEnd
+
+
+From: Prashant Zombade (IND_PUN) 
+Sent: Friday, September 13, 2024 10:03 AM
+To: prashant.zombade@gmail.com
+Subject: Qs
+
+From: Prashant Zombade 
+Sent: Thursday, March 28, 2024 10:59 AM
+To: Anand Kane <Anand.Kane@>
+Subject: FW: Master Card - Interview Questions
+
+L2 Round with Master Card:
+
+
+1.	What do you do for Impact Analysis.
+2.	Difference in Encryption and Hashing.
+3.	In an existing application you need to add to entities College and Student. How would you design this change? Consider data flow from Front-end till db and how would you secure it?
+We discussed this for 30minutes. I explained fields on the UI form, DB modeling, CRUD REST APIs, Springboot: controllers, service, repositories
+For security – I suggested Data security in motion – Asymmetric key certificate implementation – And JWT for further browser-server interactions
+He asked to have password field for the student. How to implement that?
+               Browser will hash the password – in the DB password will be stored in the hashed format – for upcoming login requests the hashed password will be compared
+
+
+Regards,
+Prashant
+
+From: Prashant Zombade 
+Sent: Thursday, March 21, 2024 12:21 PM
+To: Varsha Agarwal <Varsha.Agarwal@>
+Subject: Master Card - Interview Questions
+
+Hi Rohit,
+
+Questions asked in today’s L1 interview:
+
+1.	Introduction
+2.	Monolith vs Microservices?
+3.	How two microservice communicate with each other? Saga vs Orchestration design – explain real life example.
+4.	What is Circuit breaker pattern?
+5.	What is 12 Factor Apps?
+
+6.	What is NoSuchBeanDefinitionException exception? Have you ever came across this? When is it thrown. How to fix that?
+7.	What is encryption? Symmetric/Asymmetric keys.
+
+8.	Explain internal structure of Map.
+9.	What will be the output and why?
+
+
+
+// Will this program compile?
+
+public class FixedMap {
+
+    private int num;
+
+    FixedMap(int n){
+        num = n;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return true;
+    }
+
+    @Override
+    public int hashCode(){
+        return 0;
+    }
+
+    public static void main(String[] args) {
+        FixedMap m1 = new FixedMap(1);
+        FixedMap m2 = new FixedMap(2);
+
+        Map<FixedMap,Integer> map = new HashMap<>();
+        map.put(m1, 1);
+        map.put(m2, 2);
+
+        // What will the output?
+        System.out.println(map.size());
+
+        System.out.println("1 "+ map.get(m1));
+        System.out.println("2 "+ map.get(m2));
+
+        // What will the output?
+        System.out.println("3 "+ map.get(new FixedMap(3)));
+    }
+}
+
+
+
+
+
+
+
+From: Rohit Salunke <Rohit.Salunke@>
+Sent: Tuesday, March 12, 2024 10:18:12 AM
+To: Rohit Salunke <Rohit.Salunke@>
+Subject: RE: Recruitment drive Questions - Java - Mastercard 
+ 
+QA
+ 
+Master Card invertview Question
+1) Core java is must -> java sample code , predict output .
+2) Programing questions -> String related , Collection related .
+3) Automation - selenuim  . API questions .
+4) Rest Assured -> Practical and Json parsing /Json Validation /HTTP status code .
+ 
+---My interview questions -----
+Coding questions :
+1) Input String - MY NAME IS GANESH
+Output String - HS ENAG SI EMANYM
+Output String -HSENAG SI EMAN YM
+ 
+2) Convert 24 hours to AM and PM format write program. take input as string.
+3) Find duplicate characters with count
+            Input    -> ABBCDEEE
+            Output -> B:2 , E:3
+ 
+ 
+Threading related -
+1) diffrent ways to create threads.
+how to practical use it . I explained Thread pool Executor . //Callable interface.
+2) Event handling in JAVA.
+3) What is deadlock // How to resole deadlock in java.
+ 
+Overloading and Overriding 
+1) public avg(); // in base
+protected avg(); //in child method is overrided.
+ 
+ 
+ 
+ResAssured : 
+1)         Calling GET method what is response , if method implemented is post .
+2)         How to extract response .
+3)         Complex response .
+4)         Json Validation .
+5)         What happen when get method is set instead of post method?
+6)         When post method send without body ?
+ 
+ 
+Selenium Questions :
+1) Dynamic Browser windows handling .
+2) Alerts handling .
+3) HOW to sort values of Select element // this can be done using Comparable /Comparator class .
+ 
+Manual testing 
+Login scenarion negative test cases.
+ 
+Java Code sample predict output :
+1)
+class A{
+        void msg(){System.out.println("Selenium");}
+    }
+    class B{
+        void msg(){System.out.println("API");}
+    }
+    class C extends A,B{
+        public static void main(String args[]){
+            C obj=new C();
+            obj.msg();
+        }
+    }
+ 
+2)
+class A {
+        String frameworkType = "Selenium";
+    }
+    class B extends A {
+        String frameworkType = "API";
+        void printFrameworkName() {
+            System.out.println(frameworkType);
+            System.out.println(super.frameworkType);
+        }
+    }
+3)
+avg(int a, long b);
+avg(long a, int b);
+obj.avg(10,10);
+ 
+ 
+ 
+ 
+Rohit Salunke | Senior Technical Manager – Delivery
+C: +91 9823 262 123 
+Opus Technologies (formerly Opus Consulting Solutions) 
+ 
+                        
+ 	
+
+ 
+ 
+From: Rohit Salunke 
+Sent: Friday, March 1, 2024 1:38 PM
+To: Anurag Soni <Anurag.Soni@>
+Subject: FW: Recruitment drive Questions - Java - Mastercard
+ 
+ 
+ 
+Rohit Salunke | Senior Technical Manager – Delivery
+C: +91 9823 262 123 
+Opus Technologies (formerly Opus Consulting Solutions) 
+ 
+                        
+ 	
+
+ 
+ 
+From: Rohit Salunke 
+Sent: Wednesday, February 28, 2024 6:53 PM
+To: Sachin Randhawane <Sachin.Randhawane@>
+Subject: FW: Recruitment drive Questions - Java - Mastercard
+ 
+ 
+ 
+Rohit Salunke | Senior Technical Manager – Delivery
+C: +91 9823 262 123 
+Opus Technologies (formerly Opus Consulting Solutions) 
+ 
+                        
+ 	
+
+ 
+ 
+ 
+ 
+Please find below questions:
+•	Introduction
+•	Explain your current Automation framework
+•	How is the parallel execution done
+•	Code to explain the method overriding
+•	Inheritance & Encapsulation
+•	Use of static variable in your code
+•	Scenarios to automate for Event based application 
+•	POST vs PUT
+•	Test automation using RestAssured
+•	Automation for database testing
+•	Jenkins execution
+•	GitHub; How you manage your automation code?
+•	Testing in payment domain wrt UPI/Credit Card. Scenarios to be tested and how did you automate them?
+•	Knowledge on Kafka
+ 
+FYR.
+________________________________________
+ 
+Below are the questions asked in today’s MC interview.
+- Introduction
+- What all collections I had used in my project ? - arraylist, linkedlist etc
+- What will happen if we store below Employee objects with same details in the Hashset ? will it throw error or allow to add ?
+     Employee e1 = new Employee(1,"shalaka");
+     Employee e2 = new Employee(1,"shalaka");
+- What is immutable ? how to make custom immutable class?
+- How did we handle exception handling ? how to make custom exception?
+- What is difference between @Component, @Bean, @Configuration
+- What all messaging queues you had used ? Explain kafka ? Explain can a consumer receives message after 5 to 6 hours in rabbit mq ?
+- When to use mysql and when to use mongodb ?
+- Explain how to server handles 10 requests coming to the controller class ? in respect with dispatcher servlet.
+- What is proxy pattern ?
+- Is @Autowired works on proxy pattern ? how internlly autowire works.
+- What is Lambda function ? what is functional interface
+- Using stream api how to get employees whos name is "shalaka" from list of employees.
+- can we have concrete methods inside functionl interface ? 
+- what testing framework did you use ? why we need mockito?
+- Write a program to check weather a string "romor" is a palindrome or not.
+- What is your day-to-day activity ? do you follow agile methodology. what is team size. did to help
+API Testing –
+ 
+1-Challenges faced in API Automation
+2-Negative scenarios for  get or post request
+3-If u want to send get or post request what  things u will check .
+4- Status codes – 400,500,503
+5-Have you worked on Karate framework ?
+ 
+JAVA , Selenium & Scenario based questions–
+ 
+1.	Explain Automation Framework in detail.
+2.	How you identify automation scenarios ?
+3.	Static Keyword
+4.	Super keyword
+5.	This Keyword
+6.	Can Class implement Interface ?
+7.	Can abstract class implement non abstract method ?
+8.	Without using list how to find all drop-downs present in a webpage.
+9.	What exceptions you have faced in selenium .
+10.	Programs – Arry comparison program  arr1[2,3,4]  arr2[4,2,3]
+11.	Program 2 – Find consecutive occurrence of 0 and 1 from given array      [0,0,1,1,0,0,0,1,1,1]
+12.	In Automation which browser  versions you worked ?
+13.	If you are working on multiple tasks how is your approach to do it
+14.	negative scenario of  Withdraw functionality in ATM machine 
+15.	Jenkins pipelines
+16.	How manual testing overcomes over automation testing
+17.	The most critical defect/bug identified by you.
+ 
+ 
+ 
+ 
+ 
+MC MAGIC- Lead Java Developer - Hemant ( Mrutyunjaya Bhattacharjee (Principal Architect))
+ 
+Questions asked :
+1.	Roles and responsibilities
+2.	how many team members has he handled?
+3.	Which Domain has he worked with?
+4.	Which Client he has worked for?
+5.	Architecture and design experience
+6.	Scenario based question.            
+•	If he must develop a E commerce application from scratch, what all consideration will he have, 
+o	 if it is a desktop app or webapp
+•	Example of an application which sells some products, how it will be designed, what will be best approach?
+•	Designing thought, if any fault tolerance, how it will be managed? or something goes wrong how will he approach and rectify it
+•	how will you manage production deployment?
+•	if worked on performance testing?
+•	Day to day work, how he assigns work and who drives scrum call?
+•	ci/ cd  pipeline, how it is built, Kubernetes , cluster, etc.
+•	code coverage - which tool?
+•	How you are refactoring code?
+•	Go-Live , if any tools used for deployment?
+•	which version Java he is using?
+•	Authentication and Authorization
+How you are monitoring your application, if any issue how you will manage
+Connect - Lucas (Swapnil Chauhan)
+•       Understanding of basic HTML,CSS,JS, React hooks
+•       Understanding of designing
+•       Basic concept of react.js (hoisting, closure, async/await)
+•       How to fetch data from API’s
+•       Type program , fetch data from API
+•       Which hooks was used and examples
+•       Java concept and approach
+•       Methodology – Agile and details
+•       Can you manage a team?
+•       How can you tackle issues?
+•       How do you troubleshoot?
+•       Program – Array
+•       Sub Array of 2 elements, target element
+•       Outputs of JS programming
+•       What is last project architecture?
+o   Draw and show
+o   What is the flow and what concept is used?
+o   How many problems faced and how was it tackled?
+ 
+MC MAGIC QA – Amol Karambelkar
+•       Frame Work for API)
+•       Java code (More focus on Java and not much on selenium
+o   string-append the out of occurrence.
+o   #map
+o   singleton class
+o   Difference Array List and Array
+o   If Singleton was used in previous project
+o   Can we have method overloading/overriding for construct
+o   static method → , Can be overloaded or over ride? The method to do so
+•       Manual Question
+o   Write Scenarios on ATM Machine
+o   Some scenarios on credit card
+•       Project Details
+•       Java wrapper class?
+•       String is invertible or not?
+ 
+Full Stack Questions:
+ 
+1. What is the difference between: PUT and POST.
+2. What is the difference between: PUT and PATCH.
+3. Have you used collections? If yes, which collections you have used? What performs better- Array or collection and why?
+4. How is Tree set different from Hash set and when will you use it?
+5. What is the difference between: cookie and session.
+6. How Hashmap works internally?
+7. If you hit a request from postman or swagger and if the code takes 40/50 seconds to get fetched, how will you minimize this fetch time? How will you optimize the performance in case of a POST request hit?
+8. Have you implemented caching in your code, if yes how?
+9. What is the difference between: Relational DB and Non-relational DB.
+10. How will you make sure you are using collections properly in your code?
+11. How did you implement exception handling in your code? 
+12. What is Global exception handler?
+13. what is isEmpty() method?
+14. What are packages in java? why are packages there?
+15. Can you run a java class without main method in it?
+16. Explain public static void main(String args[]) method.
+17. What are micro services?
+18. What is the difference between: CI and CD.
+19. What are different memory types in java. 
+20. What is the difference between: Heap memory and Stack memory
+21. What is the difference between: Method overloading and Method overriding
+22. How is java platform independent?
+ 
+#UI questions-
+ 
+(Angular/React)
+ 
+1. What is observables? How do you implement it in code?
+2. What are pipes? 
+3. Which pipe interface you implement?
+4. What are pure and impure pipes?
+5. What are SPAs?
+6. How will you improve the performace of a UI application?
+7. How will you pass varibale from one UI component/page to another? (in the language of your preference- Angular/React)
+8. What is the syntax for pipes?
+9. What is accessibility in UI applications? How can accessibility be achieved?
+10. Are services singleton in Angular? What is meant by singular here?
+11. Is there a way to remove singular nature of services in angular?
+12. As you have worked on both Angular and React, Can you tell me what is the difference between: Angular and React and which one will you prefer?
+From: Sampada Korde 
+Sent: Wednesday, June 28, 2023 5:24 PM
+To: Avinash Tingre <Avinash.Tingre@>; Aniket Kulkarni <Aniket.Kulkarni@>; Syed Basha <Syed.Basha@>; Akash Sarjine <Akash.Sarjine@>; Rahul Joshi <Rahul.Joshi@>; Sarthak Sawant <Sarthak.Sawant@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Ganesh Patil <Ganesh.Patil@>; Rushikesh Bhome <Rushikesh.Bhome@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Adding few more questions to the list,
+ 
+ 
+1.	Which java version you used?
+2.	what are the java 9 features you aware?
+3.	What are the java 8 features?
+4.	what is difference between stream and collection
+5.	Stream doesn’t store data can you describe? take one array list and filter it write java 8 program and describe?
+6.	Program: Input array {1,2,3,5,7,8,9} print missing elements. What is the time complexity of above program?
+7.	why we use static and default methods in interface
+8.	What is constructor chaining 
+9.	Can we call chaining of parent constructor without super keyword?
+10.	java is call by value or call by reference?  
+11.	If java is call by value then if i pass list to one method and inside method perform some add or update operations and return list from that method and if we print list in main method then you get changed list why?
+12.	why we use abstract class when we have interface with us?
+13.	internal working of HashMap in java 8?
+14.	If key's are different for two nodes in HashMap but hashcode is same then what happen? 
+15.	What is difference between spring and spring boot?
+16.	How to Call or Consume External API from current API?
+17.	Which method of REST Template we use to Consume External API?
+18.	Describe AOP?
+19.	@transictional annotation use
+20.	how to implement Spring Boot Caching?
+21.	@SpringBootApplication annotation use
+22.	@EnableAutoConfiguration annotation use
+23.	how to exclude particular classes from configuration
+24.	what happen in distributed transactional environment when one node is failed before reaching to api gateway? how to manage?
+25.	What is 4 party module in payment gateway
+26.	What is Single Message System and Dual Message System?
+ 
+ 
+ 
+ 
+1. Program on Anagram if both strings have equal number of characters.
+ 
+2. How the parent pom resolves dependency.
+ 
+3. Difference between heap and stack memory .
+ 
+4. The data structures I have worked upon .
+ 
+5. How to sort elements in treemap .
+ 
+6. In Spring what is profile .
+ 
+7. How qualifier works in spring boot .
+ 
+8. Advantage of spring boot over other frameworks.
+ 
+9. How the different profiles get activated .
+ 
+10. Annotations in spring boot .
+ 
+11. How global execution works in spring boot 
+ 
+12. Stream API
+ 
+13. Difference between Map and Filter in stream .
+ 
+14. What are functional interfaces .
+ 
+15. What is the use of default method .
+ 
+16. If functional interface have same method then What will           happen .
+ 
+17 . Maven lifecycel .
+ 
+18 . where does Maven downloads dependencies in local .
+ 
+ 
+Regards-
+Sampada Korde | Tech PM – Technology
+ C: +91 982 379 5861 
+Opus Consulting Solutions 
+                            
+ 
+From: Sampada Korde 
+Sent: Friday, February 10, 2023 11:53 AM
+To: Avinash Tingre <Avinash.Tingre@>; Aniket Kulkarni <Aniket.Kulkarni@>; Syed Basha <Syed.Basha@>; Akash Sarjine <Akash.Sarjine@>; Rahul Joshi <Rahul.Joshi@>; Sarthak Sawant <Sarthak.Sawant@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Ganesh Patil <Ganesh.Patil@>; Rushikesh Bhome <Rushikesh.Bhome@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Adding few more questions,
+ 
+1.Given a sorted array arr[] with possibly duplicate elements, the task is to find indexes of the first and last occurrences of an element x in the given array.
+Examples:
+Input : arr[] = {1, 3, 5, 5, 5, 5, 67, 123, 125}, x = 5
+Output : First Occurrence = 2
+             Last Occurrence = 5
+Input : arr[] = {1, 3, 5, 5, 5, 5, 7, 123, 125 }, x = 7
+Output : First Occurrence = 6
+             Last Occurrence = 6
+ 
+2. Collection difference , Difference between TreeMap and TreeSet , HashTable and HashMap
+3. How to mock objects in Junit ? Db Connection method how to Mockito?
+4. How can way we will create a thread in java? Using callable interface, we will create thread? Inside callable interface call() method return type?
+ 
+ 
+Regards-
+Sampada Korde | Tech PM – Technology
+ C: +91 982 379 5861 
+Opus Consulting Solutions 
+                            
+ 
+From: Avinash Tingre <Avinash.Tingre@> 
+Sent: Friday, February 10, 2023 11:39 AM
+To: Aniket Kulkarni <Aniket.Kulkarni@>; Syed Basha <Syed.Basha@>; Akash Sarjine <Akash.Sarjine@>; Rahul Joshi <Rahul.Joshi@>; Sarthak Sawant <Sarthak.Sawant@>; Sampada Korde <Sampada.Korde@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Ganesh Patil <Ganesh.Patil@>; Rushikesh Bhome <Rushikesh.Bhome@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>
+Subject: Re: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+++ Rushikesh
+ 
+Regards
+Avinash
+________________________________________
+From: Aniket Kulkarni <Aniket.Kulkarni@>
+Sent: Wednesday, January 25, 2023 3:57:41 PM
+To: Syed Basha <Syed.Basha@>; Avinash Tingre <Avinash.Tingre@>; Akash Sarjine <Akash.Sarjine@>; Rahul Joshi <Rahul.Joshi@>; Sarthak Sawant <Sarthak.Sawant@>; Sampada Korde <Sampada.Korde@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Ganesh Patil <Ganesh.Patil@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+HI All,
+Below are questions asked as part of MC L1:
+ 
+1.create a HashMap with multiple values for a single key? o/p=> key1 = [value1, value2, value3]
+2.what is IS-A and HAS-A relation Ship?
+class Vehicle{
+private type;
+public void drive() thows OverSpeedException{
+sop("drive");
+}
+}
+ 
+class Car extends Vehicle{
+Strinng nameOfCar;
+public void drive() throws BadPathWholeException{
+sop(" car drive");
+}
+ 
+Class OverSpeedException extends Exception{
+   OverSpeedException(String mgs){
+   super(msg);
+   }
+} 
+ 
+Class BadPathWholeException extends OverSpeedException{
+   OverSpeedException(String mgs){
+   super(msg);
+   }
+} 
+3.explain above code will compile?
+4.Given a sorted array arr[] with possibly duplicate elements, the task is to find indexes of the first and last occurrences of an element x in the given array. 
+Examples: 
+Input : arr[] = {1, 3, 5, 5, 5, 5, 67, 123, 125}, x = 5
+Output : First Occurrence = 2
+              Last Occurrence = 5
+Input : arr[] = {1, 3, 5, 5, 5, 5, 7, 123, 125 }, x = 7
+Output : First Occurrence = 6
+              Last Occurrence = 6
+5.what is thread safety?
+6.What is fisrt level cache and second level cache ? which is thread safe?
+7.what is checked exception and unchecked exception?
+8.what is hibernate?
+9.what is difference between exception and runtimeException?
+ 
+ 
+Regards,
+Aniket
+ 
+From: Syed Basha <Syed.Basha@> 
+Sent: 24 January 2023 17:56
+To: Avinash Tingre <Avinash.Tingre@>; Akash Sarjine <Akash.Sarjine@>; Rahul Joshi <Rahul.Joshi@>; Sarthak Sawant <Sarthak.Sawant@>; Sampada Korde <Sampada.Korde@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Aniket Kulkarni <Aniket.Kulkarni@>; Ganesh Patil <Ganesh.Patil@>; Syed Basha <Syed.Basha@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Hi All,
+ 
+Yesterday I completed MC L2 (Manager round). Following are the questions asked as part of MC L2, and the interviewer taken one hour time.
+ 
+1.	Explain about the architecture of project that you last worked. Your roles and responsibilities in that project.
+2.	As a developer, your responsibilities from development to delivering the task to Testing environment.
+     Ans :  Clear understanding of task before writing code, Junits for all business scenarios, Sonar code quality pass, Local testing, Integration testing, Approval from reviewer and get it merged into develop or feature branch.
+3.	How you would rate yourself , If you are placing into a project which is java based backend application where the java tech stack and domain (business) is new.
+4.	What is @Bean, and its features.
+5.	Your review comments for the following code.
+      class User{
+             String id;
+             // setters and getters
+      }
+
+      class TestUser{
+            private UserService userService = new UserService(new UserRepo(“jdbc:mysql://localhost:3306/dbone”, “admin”,”admin”));
+            
+            @Test
+            public void testId(){
+                  User id = userService.getUserById(“4433”);
+            }
+      }
+6.	Any challenging situations, tasks that you faced in your over all careerer?
+ 
+Regards,
+Syed Jani Basha.
+ 
+From: Avinash Tingre <Avinash.Tingre@> 
+Sent: Friday, January 20, 2023 9:17 AM
+To: Akash Sarjine <Akash.Sarjine@>; Rahul Joshi <Rahul.Joshi@>; Sarthak Sawant <Sarthak.Sawant@>; Sampada Korde <Sampada.Korde@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Aniket Kulkarni <Aniket.Kulkarni@>; Ganesh Patil <Ganesh.Patil@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>; Syed Basha <Syed.Basha@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Hi All,
+ 
+My MC L2 round went for around 40min. Listing important topics/questions which will be useful for your L2 round.
+ 
+1.	Benefits of MS Architecture? How it is different with Monolithic application?
+2.	Is java call by value or call by reference? Demonstrate using example.
+3.	Can we extend string class?
+4.	Why string class is immutable?
+5.	Explain java design patterns. Explain at least 1 or 2 patterns from each category.
+6.	Demonstrate builder pattern. 
+7.	Demonstrate observer pattern / strategy pattern.
+8.	Java 8 / 9 features - Questions around optional class, Stream API.
+9.	Benefits of Optional class, why it is introduced in java 8?
+10.	Problem -> Find odd numbers from list of integers using stream api.
+11.	How to return a value from thread?
+12.	What is callable interface?
+13.	How can we create a thread in java
+14.	What different types of testing you have used in project?
+15.	How to mock objects in unit tests?
+16.	Questions around Mockito library
+17.	What is contract test / functional test / integration test etc.
+18.	Explain CI/CD process
+19.	Read about PCF/Redis - Added advantage
+ 
+Regards,
+Avinash
+ 
+From: Akash Sarjine <Akash.Sarjine@> 
+Sent: Thursday, January 19, 2023 7:23 PM
+To: Avinash Tingre <Avinash.Tingre@>; Rahul Joshi <Rahul.Joshi@>; Sarthak Sawant <Sarthak.Sawant@>; Sampada Korde <Sampada.Korde@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Aniket Kulkarni <Aniket.Kulkarni@>; Ganesh Patil <Ganesh.Patil@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>; Syed Basha <Syed.Basha@>
+Subject: Re: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+++ Ganesh
+ 
+Thanks,
+Akash Sarjine| Tech Engineer
+C: +91 9834132402
+ 
+    
+ 
+________________________________________
+From: Avinash Tingre <Avinash.Tingre@>
+Sent: Thursday, January 19, 2023 6:03 PM
+To: Rahul Joshi <Rahul.Joshi@>; Sarthak Sawant <Sarthak.Sawant@>; Sampada Korde <Sampada.Korde@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Aniket Kulkarni <Aniket.Kulkarni@>; Akash Sarjine <Akash.Sarjine@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>; Syed Basha <Syed.Basha@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+ 
+ 
+From: Avinash Tingre 
+Sent: Thursday, January 19, 2023 5:56 PM
+To: Rahul Joshi <Rahul.Joshi@>; Sarthak Sawant <Sarthak.Sawant@>; Sampada Korde <Sampada.Korde@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Aniket Kulkarni <Aniket.Kulkarni@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>; Syed Basha <Syed.Basha@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+++ Akash
+ 
+Regards,
+Avinash
+ 
+From: Rahul Joshi <Rahul.Joshi@> 
+Sent: Wednesday, January 18, 2023 3:12 PM
+To: Avinash Tingre <Avinash.Tingre@>; Sarthak Sawant <Sarthak.Sawant@>; Sampada Korde <Sampada.Korde@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Aniket Kulkarni <Aniket.Kulkarni@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>; Syed Basha <Syed.Basha@>
+Subject: Re: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
++ Aniket
+ 
+________________________________________
+From: Avinash Tine <Avinash.Tingre@>
+Sent: Wednesday, January 18, 2023, 2:30 PM
+To: Sarthak Sawant <Sarthak.Sawant@>; Rahul Joshi <Rahul.Joshi@>; Sampada Korde <Sampada.Korde@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>; Syed Basha <Syed.Basha@>
+Subject: Re: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+++Syed
+ 
+Regards,
+Avinash
+________________________________________
+From: Sarthak Sawant <Sarthak.Sawant@>
+Sent: Wednesday, January 18, 2023 1:41:26 PM
+To: Avinash Tingre <Avinash.Tingre@>; Rahul Joshi <Rahul.Joshi@>; Sampada Korde <Sampada.Korde@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>
+Subject: Re: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Hi All,
+ 
+Please find below questions asked in MC interview -
+ 
+1. Webservice to fetch the customer details when customer ID is the input 
+Write URL endpoint, all classes required for it and explain purpose for it. 
+How you will handle if we want to return reponse in JSON or in XML format. 
+What is path variable and request parameter. 
+ 
+ 
+2. Write a program which works as an inmemory cache requirements are 
+1) It should expose a method to accept key and a value, the type of value should be determined at instantiation
+2) IT should expose a method to return a value based on the key provided 
+3) Any key value inserted should be accessible for 10 mins only 
+ 
+What is date time classes in java, how we can compare two timestamps. 
+ 
+ 
+3. What is @ID annotation. What if we add this annotation over a multiple fields in same entity. 
+4. Difference between HashMap and TreeMap? 
+5. How to externalize properties of application.properties file? 
+6. How to measure perfomance of API's and how to improvise response time of it. 
+7. Deployment details of application on which you last worked? Which tool used to see logs of application. 
+8. What is JPA? @CreationTimestamp, @UpdateTimestamp and @Temporal 
+ 
+ 
+1. Difference between TreeMap and TreeSet 
+2. What all method Object class provide? Can you tell the exact count and also explain what each individual does. 
+3. How to sort objects? What is comparable and comparator? difference between them? 
+4. What are new features introduced in Java8? 
+5. Difference between .map() and .filter()
+6. Threading, collections concept. Oops concept overview.
+ 
+ 
+Note - Programming questions are repeated which team earlier shared in this mail.
+Get Outlook for Android
+ 
+________________________________________
+From: Chetan Dixit <Chetan.Dixit@>
+Sent: Wednesday, January 18, 2023 1:31:54 PM
+To: Avinash Tingre <Avinash.Tingre@>; Rahul Joshi <Rahul.Joshi@>; Sampada Korde <Sampada.Korde@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Sarthak Sawant <Sarthak.Sawant@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Hi Team,
+ 
+Please find below questions which were asked in MC interview:
+ 
+1.	OOPs concept
+2.	Types of polymorphism and there usage
+3.	What are Immutable classes and how can we define a immutable class.
+4.	Spring lifecycle.
+5.	What is IOC?
+6.	Difference b/w BeanFactory and ApplicationContext
+7.	@Configuration, @Component and @Bean Usage
+8.	print the count of repeated elements in sorted order. 
+List<String> elements = {"HDFC", "CITI", "CITI", "SBI" , "HDFC","CITI"}
+SBI - 1
+HDFC - 2
+CITI – 3
+        
+Thanks,
+Chetan Dixit
+ 
+From: Avinash Tingre <Avinash.Tingre@> 
+Sent: 17 January 2023 23:36
+To: Rahul Joshi <Rahul.Joshi@>; Sampada Korde <Sampada.Korde@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Sarthak Sawant <Sarthak.Sawant@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Hi Team,
+ 
+My interview went for 1 hour. Go through your resume before interview, questions will be asked on the details you have mentioned in resume.
+ 
+Please find below questions which were asked in MC interview:
+ 
+1.	Which collections you have used ?
+2.	Class vs object
+3.	How to establish connection to DB in spring boot?
+4.	Can we establish parallel connections to separate DB in java?
+5.	HashMap internals
+6.	Concurrent HashMap vs HashMap
+7.	How autowiring works internally
+8.	Can we do autowiring by interface? 
+9.	In case of autowiring by interface.. What is there are two different implementations? Which bean will be autowired? Or any error will be there? How to resolve those errors?
+10.	Can we catch the error?
+11.	Can have custom exceptions? Can we have custom errors?
+12.	https://www.programmingwithbasics.com/2016/12/java-program-for-denomination-of-amount.html  Screenshare and write code in notepad
+13.	How to use custom keys in HashMap
+14.	How to change default web server in spring boot
+15.	JPA vs hibernate
+16.	Exception handling in microservices
+17.	Circuit breaker pattern
+18.	Data consistence in microservices in case of failure
+19.	How to retry in spring boot
+20.	How to do health check 
+21.	How to scale pod in case of load for ex. 70%
+22.	Etc. Not remembering other questions..
+ 
+Regards,
+Avinash
+ 
+From: Rahul Joshi <Rahul.Joshi@> 
+Sent: Wednesday, January 18, 2023 12:47 PM
+To: Sampada Korde <Sampada.Korde@>; Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Sarthak Sawant <Sarthak.Sawant@>; Avinash Tingre <Avinash.Tingre@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Hi All,
+Please find below questions for your reference.
+ 
+1.	Difference between @Configuration, @Component @Bean? Their use and implement with example.
+2.	Explain Test frameworks. Difference between SprintbootTest, JunitTest and Mockito.
+3.	Explain Polymorphism in detail. Types of polymorphism. Explain with example implementation. 
+4.	What are the differences in method overriding we can have in two overridden method.
+5.	What is immutable class. Implement it with example.
+ 
+ 
+There are multiple sub questions of all the questions which they play around in code. 
+ 
+Rahul Joshi | Tech Lead
+ 
+T: +91 7276273439
+ 
+Opus Consulting Solutions
+      
+ 
+From: Sampada Korde <Sampada.Korde@> 
+Sent: 17 January 2023 22:27
+To: Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Sarthak Sawant <Sarthak.Sawant@>; Avinash Tingre <Avinash.Tingre@>; Rahul Joshi <Rahul.Joshi@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>; Kamlesh Shirpurkar <Kamlesh.Shirpurkar@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+Importance: High
+ 
+Hi Team,
+ 
+Please use codeshare for L1 candidate to write code snippet as we have to share the code with MC client along with L1 feedback. 
+ 
+Henceforth, attach the code snippet in the feedback sheet and share.
+ 
+https://codeshare.io/ 
+ 
+ 
+ 
+Note: Reattaching the MC hands-on questions asked by one of their interviewer. 
+ 
+Regards-
+Sampada Korde | Tech PM – Technology
+ C: +91 982 379 5861 
+Opus Consulting Solutions 
+                             
+ 
+From: Nageshwar Patidar 
+Sent: 16 January 2023 16:36
+To: Sampada Korde <Sampada.Korde@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Sarthak Sawant <Sarthak.Sawant@>; Avinash Tingre <Avinash.Tingre@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Hi All,
+ 
+Please find below interview Questions asked in Mastercard interview.
+ 
+ 
+1.	Interviewer will ask rating score of your skills. 
+2.	what is spring actuator?
+3.	Rest API URL’s patterns.
+4.	Create Rest controller class and add all http methods .
+5.	Difference between soap and rest API.
+6.	Difference between Json and xml.
+7.	What is Requestbody and Responsebody annotation.?
+8.	What is @RequestMapping annotation?
+9.	what is generics in java?
+10.	 
+Note:- Interviewer ask us to share the screen before starting the interview to check unwanted tabs, So please close all the unwanted tab , Interview questions documents and mails.
+ 
+Regards,
+Nageshwar Patidar
+ 
+ 
+From: Sampada Korde <Sampada.Korde@> 
+Sent: 16 January 2023 16:03
+To: Nageshwar Patidar <Nageshwar.Patidar@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Sarthak Sawant <Sarthak.Sawant@>; Avinash Tingre <Avinash.Tingre@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Hi Nageshwar,
+ 
+Please add today’s interview questions / feedback and circulate it across.
+ 
+ 
+Regards-
+Sampada Korde | Tech PM – Technology
+ C: +91 982 379 5861 
+Opus Consulting Solutions 
+                             
+ 
+From: Sampada Korde 
+Sent: 13 January 2023 23:22
+To: Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>; Saurabh Makwane <Saurabh.Makwane@>; Chetan Dixit <Chetan.Dixit@>; Sarthak Sawant <Sarthak.Sawant@>; Avinash Tingre <Avinash.Tingre@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Adding few more questions from today’s MC interview call,
+ 
+Micro Service Questions: 
+ 
+1) How to do health check of MS?
+2) How will u re-try if a service is down?
+3) How circuit breakers work?
+ 
+Core Java Questions:
+ 
+1) When to use interface & abstract class?
+2) What is @autowire annotation?
+3) can we autowire an interface & abstract class?
+4) Can Abstract class A auto wires Class B, class B extends A , What if u don’t implement abstract methods?
+5) Do abstract class @autowire scenario needs implementation?
+6) Do we have a Constructor for Abstract class?
+7) Can private methods be in abstract class?
+8) Can a class be abstract  class with no abstract method?
+9) Difference between path & classpath? what is JVM & JDK?
+10) Concurrent Hashmap & normal Hashmap difference?
+11) What all methods Hashmap provides?
+12) how to remove value from Hashmap? Can remove be called just after put?
+13) In which scenario we can use remove method of hashmap? - java 8 & previous version
+14) Iterate the Hashmap, get the key, if condition value matches, call remove method? will this work? What is the output?
+15) How to handle Custom object as key in Hashmap?
+16) If equals returns true & hashcode method returns false in Hashmap,  will it add the object? -- if added how it will manage internally?
+17) String creation : string = "s" , new String () – Explain.
+18) string pool eligible / not eligible for GC?
+19) what are immutable objects? 
+ 
+Hands-on questions: 
+ 
+1) Write a method to identify vowels in a string & no. of times vowels repeated in the same string.
+2)Assume list of numbers, if odd numbers, return true, else return false. Java8 concept – mostly streams.
+ 
+Hope this helps for our internal L1 selection.
+ 
+ 
+Regards-
+Sampada Korde | Tech PM – Technology
+ C: +91 982 379 5861 
+Opus Consulting Solutions 
+                             
+ 
+From: Sampada Korde 
+Sent: 12 January 2023 16:32
+To: Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>
+Cc: Ravi Jadhav <Ravi.Jadhav@>; Vikram Gadiya <vikram.gadiya@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Hi All,
+ 
+I attended MC interview and below are my observations:
+ 
+1.	Interview starts with resume screening. Mostly 3-4 max questions are expected, to check how deep a candidate is involved in the project / domain knowledge.
+ 
+Today’s candidate was working on a card processing system, so interviewer asked below questions,
+a.       Payment Lifecycle in cards.
+b.       During txn. processing how system handles atomicity. Mostly concurrent transactions scenarios.
+ 
+2.	2-3 hands-on questions to check logic building skills. Attached are the questions asked in today’s interview.
+a.	Core JAVA concepts like Date class, formatters, timestamp conversion, this keyword, Enums, collections for data storing, data traversing, pure logical screening on basic java.
+b.	Calculations – logic to fetch 10 mins difference records
+c.	Put, get Value in a Map / HashMap.
+d.	JAVA 8 concepts- streams, lambda expression (hands-on question).
+e.	Write a webservice. (hands-on question).
+ 
+3.	2-3 Spring boot, JPA , design patterns theory questions. Questions asked today are listed below,
+a.	java beans singleton & java singleton pattern – difference. Can we have multiple JVM's / containers?
+b.	spring boot configuration file - its path after deployment. Its path in generated jar. Does spring boot allows externalization of properties or resource folder? How application knows where are the properties files?
+c.	@configuration & @component – difference.
+d.	What is @transaction in spring boot? Who provides @transaction in spring boot?
+ 
+Hope this helps. Let me know if there are any further questions. 
+ 
+Regards-
+Sampada Korde | Tech PM – Technology
+ C: +91 982 379 5861 
+Opus Consulting Solutions 
+                             
+ 
+From: Ravi Jadhav 
+Sent: 04 January 2023 17:56
+To: Priyanka Dey <Priyanka.Dey@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>
+Cc: C-Sunny Dewan <C-Sunny.Dewan@>; Diksha Dayama <Diksha.Dayama@>; Madhumita Jadhav <Madhumita.Jadhav@>; Rohit Sankpal <Rohit.Sankpal@>; Vikram Gadiya <vikram.gadiya@>; Sampada Korde <Sampada.Korde@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
++ Sampada
+ 
+ 
+Ravi Jadhav | Senior Technical Manager
+C: +91 937 108 5512
+Opus Consulting Solutions 
+                              
+ 
+From: Ravi Jadhav 
+Sent: Wednesday, January 4, 2023 5:35 PM
+To: Priyanka Dey <Priyanka.Dey@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>
+Cc: C-Sunny Dewan <C-Sunny.Dewan@>; Diksha Dayama <Diksha.Dayama@>; Madhumita Jadhav <Madhumita.Jadhav@>; Rohit Sankpal <Rohit.Sankpal@>; Vikram Gadiya <vikram.gadiya@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+We just had a call MasterCard panel and following are inputs given for our evaluation, please adhere it…
+ 
+1.	MC Panel asking questions
+a.	Core Java
+b.	Collections
+c.	Spring
+d.	Rest service
+e.	As per profile mentioned tech
+f.	More practical than theory
+g.	CodeShare is been used to write code
+h.	Candidate should ask questions to have clear requirement before writing code
+2.	Bean Scope
+3.	Rest service - End to End - including exceptions
+a.	Best 
+b.	Error conversion
+c.	Http codes
+d.	Backward comp - Spring
+ 
+4.	Microservice - Optional
+5.	Event Driven -Optional
+6.	Java 8 - Mandatory 
+7.	Junit - Mandatory
+a.	Any mocking framework
+8.	application.properties - Location
+9.	Basics - XOR, limit of integer
+10.	Spring AOP - 
+11.	Junit for method not returning any value
+12.	Naming conventions while writing code
+13.	Resource has to be good in Core Java, Java - 8, Spring, Rest Service and should be able to provided end to end solution for given requirement
+ 
+Please connect with me for any doubt or clarification.
+ 
+Thanks,
+Ravi Jadhav | Senior Technical Manager
+C: +91 937 108 5512
+Opus Consulting Solutions 
+                              
+ 
+From: Ravi Jadhav 
+Sent: Wednesday, January 4, 2023 4:11 PM
+To: Priyanka Dey <Priyanka.Dey@>; Janavi Dinesh <Janavi.Dinesh@>; Rajkumar Patwari <Rajkumar.Patwari@>; Amarendra Kumar <Amarendra.Kumar@>; Sumeet Dwivedi <Sumeet.Dwivedi@>; Sahil Bhaskarwar <Sahil.Bhaskarwar@>; Vikash Kumar <Vikash.Kumar@>; Amit Dwivedi <Amit.Dwivedi@>; Sima Jadhav <Sima.Jadhav@>; Gopal Tamrakar <Gopal.Tamrakar@>; Ram Pravesh <Ram.Pravesh@>; Revnath Gaikar <Revnath.Gaikar@>; Prem Pal <Prem.Pal@>; Vaibhav Gite <Vaibhav.Gite@>; Umesh Gholap <Umesh.Gholap@>; Prakash Chaudhari <Prakash.Chaudhari@>
+Cc: C-Sunny Dewan <C-Sunny.Dewan@>; Diksha Dayama <Diksha.Dayama@>; Madhumita Jadhav <Madhumita.Jadhav@>; Rohit Sankpal <Rohit.Sankpal@>; Vikram Gadiya <vikram.gadiya@>
+Subject: RE: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Hello All,
+ 
+Please provide your timeslots to Priyanka for weekend drive ASAP.
+ 
+Evaluation need to be done on following and everyone should provide results in below format – 
+ 
+Technology that need to evaluate – 
+Core Java, Java8, Advance Java, Spring Boot, Microservices, Event Driven programming using Kafka or any messaging technique such as RabbitMQ, ActiveMQ. Design patterns basis of 5 to 7 years and advance for more than 8 years.
+ 
+Also need to comment on presentation and communication skills.
+ 
+Rating scale:     5 - Excellent;   4 - Good;     3 - Fair;     2 - Below Average;   1 - Poor 
+Topics	Skill Level	Comments
+Core Java	 	Java Basics, Write a program
+Java 8	 	Lambda, Function interface.. ETC(You know more than me)
+Spring Boot	 	 
+Microservices	 	 
+Event Driven	 	Kafka or any other queuing mechanism
+Design Patterns	 	 
+Cloud (Optional)	 	PCF or any
+Communication 	 	Technical and non technical
+Presentation	 	Observe how is behaivng while answering questions, how resource is presenting itself
+ 
+Thanks,
+Ravi Jadhav | Senior Technical Manager
+C: +91 937 108 5512
+Opus Consulting Solutions 
+                              
+ 
+From: Priyanka Dey <Priyanka.Dey@> 
+Sent: Wednesday, January 4, 2023 2:57 PM
+To: Ravi Jadhav <Ravi.Jadhav@>
+Cc: C-Sunny Dewan <C-Sunny.Dewan@>; Diksha Dayama <Diksha.Dayama@>; Madhumita Jadhav <Madhumita.Jadhav@>; Rohit Sankpal <Rohit.Sankpal@>
+Subject: Recruitment Drive - Drive on 9th & 10th Jan 2023. 
+ 
+Hi Ravi, 
+ 
+We are planning for Java Drive on 9th & 10th Jan 2023. 
+Please provide the L1 Technical Panels for the drive.
+ 
+Date	Round	Account	Skill	Panel Name	Interview Slot 1	Interview  Slot 2	Interview  Slot 3
+ 
+ 
+Thanks & Regards
+ 
+Priyanka Dey | Senior Associate - Talent Acquisition
+Email ID : Priyanka.Dey@
+C: +91-8600770592
+ 
+                  
+ 
+ 
+
+
+Regards
+Prashant Zombade
+E: 
+T: +91 020 4857 5100  E: 604
+Opus Technologies (formerly Opus Consulting Solutions)
+ 
+     
+
+This message contains information that may be privileged and/or confidential, and is the property of Opus Technologies. It is intended only for the person to whom it is addressed. If you are not the intended recipient of this message, you are not authorized to read, print, retain, copy, disseminate, distribute, or use this message in full or in part. In such a case, please notify the sender immediately, and delete all copies of this message. 
